@@ -22,10 +22,6 @@
 # include "../libft/libft_header/libft.h"
 
 /*
-**VARIABLE
-*/
-
-/*
 **STRUCTURE
 */
 
@@ -97,8 +93,6 @@ void			ft_char_cp(char c, int	*p_with_form);
 **Number
 */
 
-char			*ft_itoa(int n);
-char			*ft_uitoa(unsigned int n);
 char			*ft_hexitoa(unsigned int n, char c);
 char			*ft_long_hexitoa(unsigned long n, char c);
 char			*ft_int_add_precision(char	*nbr, int precision);
