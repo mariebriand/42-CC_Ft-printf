@@ -126,8 +126,16 @@ int		ft_print_hex(t_format format, va_list ap)
 	return (ft_put_formatted_nbr(format, number));
 }
 
-/*
-** commentaire
+/* 
+** Alloue (avec malloc(3)) et gère les cas particuliers
+** en cas de valeur nulle des nombres à formater et
+** selon le format donné. 
+** =========
+** #1 : le particulier à traiter.
+** #2 : la (taille -1) à allouer pour la chaîne correspondante.
+** =========
+** Retourne la chaîne de caractères représentant 
+** le nombre à formatter, NULL si l'allocation échoue. 
 */
 
 char	*ft_zeroes_cp(int cp, int size)

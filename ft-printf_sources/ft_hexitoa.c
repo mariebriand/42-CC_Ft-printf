@@ -13,7 +13,14 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un unsigned integer n reçu en argument.
+** =======
+** #1 : l'integer à convertir.
+** #2 : le specifier indiquant si la base est en MAJ ou MIN.
+** =======
+** Retourne la chaine de caractères représentant l’integer,
+** NULL si l’allocation échoue.
 */
 
 char	*ft_hexitoa(unsigned int n, char c)
@@ -45,7 +52,14 @@ char	*ft_hexitoa(unsigned int n, char c)
 }
 
 /*
-** commentaire
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un unsigned long n reçu en argument.
+** =======
+** #1 : l'integer à convertir.
+** #2 : le specifier indiquant si la base est en MAJ ou MIN.
+** =======
+** Retourne la chaine de caractères représentant l’integer,
+** NULL si l’allocation échoue.
 */
 
 char	*ft_long_hexitoa(unsigned long n, char c)

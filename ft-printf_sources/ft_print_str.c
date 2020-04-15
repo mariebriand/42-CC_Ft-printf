@@ -44,7 +44,14 @@ int		ft_print_str(t_format format, va_list ap)
 }
 
 /*
-** commentaire
+** Calcule le nombre de caractères ('0' ou ' ') à ajouter
+** pour une chaîne, en fonction des indications de formatage.
+** =========
+** #1 : un pointeur sur le champ précision du format.
+** #2 : un pointeur sur le champ largeur du format.
+** #3 : la chapine de caractère à formater.
+** =========
+** Retourne le nombre de caractères à ajouter lors du formatage.
 */
 
 int		ft_format_trans(int *ptr_precision, int *ptr_width, char *str)
@@ -64,7 +71,13 @@ int		ft_format_trans(int *ptr_precision, int *ptr_width, char *str)
 }
 
 /*
-** commentaire
+** Crée la chaîne de caractères
+** à ajouter à celle qu'il faut formater.
+** =========
+** #1 : le champ flag du format.
+** #2 : le nombre de caractères de la chaîne à créer.
+** =========
+** Retourne la chaîne à ajouter lors du formatage.
 */
 
 char	*ft_to_add(int flag, int nbr_space)
@@ -79,7 +92,14 @@ char	*ft_to_add(int flag, int nbr_space)
 }
 
 /*
-** commentaire
+** Crée la chapine finale formattée
+** en fonction du champ flag du format. 
+** =========
+** #1 : le champ flag du format.
+** #2 : la chaîne de caractères extraite de l'originale.
+** #3 : la chaîne à ajouter.
+** =========
+** Retourne la chaîne à imprimer, après formatage.
 */
 
 char	*ft_printed(int flag, char *new_buffer, char *to_add)

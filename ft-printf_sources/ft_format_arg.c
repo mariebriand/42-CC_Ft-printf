@@ -13,7 +13,17 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Parse str jusqu'à trouver une conversion à faire.
+** Pour chacune, imprime la partie précédente de str n'en nécéssitant pas,
+** puis récupère le format de la conversion à faire. 
+** Si les indications de formatage sont valides, la fonction effectue
+** la conversion et l'imprime. Puis elle recommence jusquà la fin de str. 
+** =========
+** #1 : la chaîne de caractères, premier argument de ft_printf(). 
+** #2 : un pointeur sur la position actuelle dans str.
+** #3 : un pointeur sur l'élément actuel de la liste d'arguments.
+** #4 : un pointeur sur le retour de ft_printf().
+** =========
 */
 
 void	ft_arg(const char *str, t_position *ptr_pos, va_list ap, int *ret_pf)

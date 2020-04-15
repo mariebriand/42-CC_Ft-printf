@@ -13,7 +13,13 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Imprime les parties de la chaîne de caractères principale de ft_printf()
+** qui ne nécessitent pas de conversion.
+** =========
+** #1 : la chaîne de caractères, premier argument de ft_printf(). 
+** #2 : un pointeur sur la position actuelle dans str.
+** =========
+** Retourne le nombre de caractère imprimés.
 */
 
 int		ft_get_string(const char *str, size_t *ptr_pos)

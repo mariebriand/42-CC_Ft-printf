@@ -13,7 +13,14 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un nombre après son formatage de précision.
+** =======
+** #1 : la chaîne de caractère représentant le nombre à formater. 
+** #2 : le champ précision du format.
+** =======
+** Retourne la chaine de caractères nbr
+** une fois le formatage de précision effectué.
 */
 
 char			*ft_int_add_precision(char *nbr, int precision)

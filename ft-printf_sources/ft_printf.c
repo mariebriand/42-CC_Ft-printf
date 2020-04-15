@@ -13,7 +13,16 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Imprime sur stdout la chaîne de caractères
+** passée en premier argument en suivant les indications
+** de formatage si elles existent.
+** =========
+** #1 : la chaîne de caractère constante, 
+		qui contient (ou non) une (des) indication(s) de formatage.
+** #(...) : le(s) élément(s) dans l'ordre à formater.
+** =========
+** Retourne le nombre de caractères imrimés,
+** sans compter l'octer nul final, -1 en cas d'erreur.
 */
 
 int		ft_printf(const char *str, ...)

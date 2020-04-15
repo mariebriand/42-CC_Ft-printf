@@ -13,7 +13,14 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Alloue (avec malloc(3)) et retourne une chaine de
+** caractères représentant un nombre après son formatage de largeur.
+** =======
+** #1 : un format.
+** #2 : la chaîne de caractère représentant le nombre à formater.
+** =======
+** Retourne la chaine de caractères nbr
+** une fois le formatage de largeur effectué.
 */
 
 char	*ft_int_add_width(t_format format, char *nbr)
@@ -36,7 +43,17 @@ char	*ft_int_add_width(t_format format, char *nbr)
 }
 
 /*
-** commentaire
+** Alloue (avec malloc(3)) et retourne une chaîne de
+** caractères représentant un nombre après son formatage de précision
+** pour les cas particuliers ayant pour flag '0'.
+** =======
+** #1 : le champ précision du format.
+** #2 : le champ largeur du format.
+** #3 : la longueur de la chaîne représentant le nombre à formater.
+** #2 : la chaîne de caractère représentant le nombre à formater.
+** =======
+** Retourne la chaine de caractères nbr
+** une fois le formatage de précision effectué.
 */
 
 char	*ft_int_cp(int precision, int width, int len, char *nbr)

@@ -13,8 +13,16 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** commentaire
+** Dirige le formatage de la partie de str
+** selon le specifier et l'imprime.
+** =========
+** #1 : un format.
+** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
+** =========
+** Retourne le nombre total de caractères imprimés,
+** -1 en cas d'errreur.
 */
+
 
 int	ft_print_arguments(t_format format, va_list ap)
 {

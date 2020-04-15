@@ -13,7 +13,15 @@
 #include "../ft-printf_header/libftprintf.h"
 
 /*
-** Commentaire
+** Alloue (avec malloc(3)) et retourne une nouvelle
+** chaine, résultat de la concaténation de s1 et s2.
+** =======
+** #1 : La chaine de caractères préfixe.
+** #2 : La chaine de caractères suffixe.
+** =======
+** Retourne un pointeur sur la nouvelle chaîne,
+** s1 si s2 est NULL, s2 si s1 est NULL,
+** ou NULL si l'allocation dynamique de mémoire échoue.
 */
 
 char	*ft_join(char *s1, char *s2)
@@ -46,7 +54,13 @@ char	*ft_join(char *s1, char *s2)
 }
 
 /*
-** Commentaire
+** Gère les cas particuliers de ft_join(2).
+** =======
+** #1 : La chaine de caractères préfixe.
+** #2 : La chaine de caractères suffixe.
+** =======
+** Retourne un pointeur sur s1 si s2 est NULL,
+** s2 si s1 est NULL, ou NULL sinon.
 */
 
 char	*ft_str_null(char *s1, char *s2)
