@@ -19,6 +19,8 @@
 ** #1 : un format.
 ** #2 : le caractère à imprimer.
 ** =========
+** Retourne le nombre de caractère imprimés
+** suite au formatage.
 */
 
 int		ft_put_formatted_char(t_format format, char c)
@@ -53,8 +55,7 @@ int		ft_put_formatted_char(t_format format, char c)
 ** #1 : un format.
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
-** Retourne le nombre total de caractères imprimés,
-** -1 en cas d'errreur.
+** Retourne le nombre total de caractères imprimés.
 */
 
 int		ft_print_c(t_format format, va_list ap)

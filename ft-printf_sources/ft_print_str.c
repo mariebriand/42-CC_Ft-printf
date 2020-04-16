@@ -19,6 +19,7 @@
 ** #1 : un format.
 ** #2 : un pointeur sur l'élément actuel de la liste d'arguments.
 ** =========
+** Retourne le nombre de caractères imprimés.
 */
 
 int		ft_print_str(t_format format, va_list ap)
