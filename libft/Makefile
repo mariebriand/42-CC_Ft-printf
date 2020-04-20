@@ -23,7 +23,7 @@ OUTPUT = libft_sources/libft_output/
 STRING = libft_sources/libft_string/
 GNL = libft_sources/get-next-line/
 
-#################################### SOURCES ####################################
+#################################### SOURCES ###################################
 
 #-------------------------------CHAR-#
 SRCS += $(CHAR)ft_isalpha.c		$(CHAR)ft_isdigit.c		$(CHAR)ft_isalnum.c \
@@ -63,7 +63,7 @@ SRCS += $(STRING)ft_strlen.c	$(STRING)ft_strchr.c	$(STRING)ft_strrchr.c \
 #--------------------------------GNL-#
 SRCS += $(GNL)gnl_utils.c		$(GNL)gnl.c \
 
-##################################### BASIC #####################################
+##################################### BASIC ####################################
 
 CFLAGS 	= -Wall -Wextra -Werror
 
@@ -75,7 +75,7 @@ HEADER	= $(INC)libft.h
 
 OBJS	= $(SRCS:.c=.o)
 
-##################################### RULES #####################################
+##################################### RULES ####################################
 
 all: $(NAME)
 

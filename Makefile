@@ -17,7 +17,7 @@ NAME = libftprintf.a
 PTF = ft-printf_sources/
 LIBFT = libft/libft_sources/
 
-#################################### SOURCES ####################################
+#################################### SOURCES ###################################
 
 SRCS =	$(PTF)ft_calloc_flag.c			$(PTF)ft_char_add_width.c \
 		$(PTF)ft_check_format.c			$(PTF)ft_extract_buffer_part.c \
@@ -29,7 +29,7 @@ SRCS =	$(PTF)ft_calloc_flag.c			$(PTF)ft_char_add_width.c \
 		$(PTF)ft_print_nbr.c			$(PTF)ft_print_str.c \
 		$(PTF)ft_printf.c				$(PTF)ft_put_formatted_nbr.c \
 
-##################################### BASIC #####################################
+##################################### BASIC ####################################
 
 CFLAGS = -Wall -Wextra -Werror
 
@@ -46,7 +46,7 @@ OBJLIB =	$(LIBFT)get-next-line/*.o	$(LIBFT)libft_char/*.o \
 			$(LIBFT)libft_memory/*.o	$(LIBFT)libft_nbr/*.o \
 			$(LIBFT)libft_output/*.o	$(LIBFT)libft_string/*.o \
 
-##################################### RULES #####################################
+##################################### RULES ####################################
 
 all: complib $(NAME)
 
