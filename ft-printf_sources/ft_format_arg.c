@@ -6,12 +6,32 @@
 /*   By: mabriand <mabriand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 16:03:35 by mabriand          #+#    #+#             */
-/*   Updated: 2020/01/22 13:53:52 by mabriand         ###   ########.fr       */
+/*   Updated: 2022/05/20 14:39:57 by mabriand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft-printf_header/libftprintf.h"
 
+/*
+**	Parameters:
+**		@ const char **str	:	
+**		@ t_position *pos	:
+**		@ va_list ap	
+**
+**	Description:
+**	->	Gets the process ID (PID) with getpid(). It will enable communication 
+**		between processes later.
+**		
+**	->	Thanks to sigaction(3), defines which action occurs when SIGUSR1 or
+**		SIGUSR2 is received.
+**	
+**	->	Wait for a signal from the client. (For both signals, print_msg(3) will
+**		be called. However, the succession of actions will defer inside the
+**		function according to the signal recevied).
+**	
+**	Return values:
+**		If an error occurs, the process returns 1, else 0.
+*/
 /*
 ** Parse str jusqu'à trouver une conversion à faire.
 ** Pour chacune, imprime la partie précédente de str n'en nécéssitant pas,
